@@ -80,18 +80,16 @@
         <section class="container">
             <h4> Features of  <span class="text-primary">JS:</span> </h4><hr class="w-25">
             <p class="bg-info p-4">
-                JavaScript exicution thred is a single thread which means it can handle a piece of code at a time. For this reason, it is called single thread programming language.It is an interpreted language, this means we do not have to compile the JavaScript source code before sending it to the browser. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. It runs inside an Internet browser. Every browser provides a JavaScript engine that runs the JavaScript code which means JavaScript engine convert the javascript code into machine language.The source code is passed through a program called a compiler, which translates it into bytecode that the machine understands and can execute. JavaScript is using a callback queue.The Engine consists of two main components: Memory Heap which is used for memory management and Call Stack which is used to store the function in the form of stack(which function is first pushed to the stack is poped from the stack to the end and which function is pushed to the end of the stack is first poped from the stack) when we call the function in JS. It works both in synchronous and asynchronous way. 
+                JavaScript exicution thred is a single thread which means it can handle a piece of code at a time. For this reason, it is called single thread programming language.It is an interpreted language, this means we do not have to compile the JavaScript source code before sending it to the browser. An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. It runs inside an Internet browser. Every browser provides a JavaScript engine that runs the JavaScript code which means JavaScript engine convert the javascript code into machine language.The source code is passed through a program called a compiler, which translates it into bytecode that the machine understands and can execute.The Engine consists of two main components: Memory Heap which is used for memory management and Call Stack which is used to store the function in the form of stack(which function is first pushed to the stack is poped from the stack to the end and which function is pushed to the end of the stack is first poped from the stack) when we call the function in JS. 
             </p>
 
-            <h4> Features of  <span class="text-primary">JS eventloops:</span> </h4><hr class="w-25">
-            <p>
-                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel.
+            <h4> Features of  <span class="text-primary">JS eventloop:</span> </h4><hr class="w-25">
+            <p class="bg-info p-4">
+                The event loop is a constantly running process that monitors both the callback queue and the call stack.JavaScript works both in synchronous and asynchronous way. Call Stack stores the synchronous  and  the asynchronous function in the form of stack. Since it can not exicute the asynchronous function, it  exicutes  the synchronous function and pop from the stack. when it gets the asynchronous function , it hand overs  this function  to his assistant which means web API(DOM manipulation,different kind of event)/C++ API and pop the asynchronous function from the stack and frees himself. Then it goes to the next line. For this reason js is called single threaded programming as well as event-driven programming language which can do multiple task at a time. But exicution threded of js is a single thread which means it can do one task at a time.     
+                JavaScript is using a callback queue. After finishing the asynchronous function timer , assistant inform the another assistant which means the callback queue through a event and sends to his. The callback queue stores these asynchronous function in the form of queue(FIFI just oposite stack).  These function are placed from the callback queue to the call stack through a loop which is called event loop . It creates a communication way between callback queue and the call stack.  
             </p>
 
-            <h4> Difference of  <span class="text-primary">Localstorage &</span> <span class="text-success">Sessionstorage :</span></h4><hr class="w-25">
-            <p>
-                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vel.
-            </p>
+            
 
         </section>
         <footer></footer>
