@@ -45,6 +45,7 @@ const switchTab = (id) => {
         displayLikedPosts();
     } 
     else {
+      document.getElementById( "section" ).style.display="none";
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "liked" ).style.display = "none";
@@ -156,6 +157,7 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
    document.getElementById( "reported" ).innerHTML="";
+   
   
     const reportedPosts = getReportedPosts();
     reportedPosts.forEach((post) => {
